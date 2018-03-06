@@ -34,13 +34,13 @@
 - C programming
 - software development
 - operating systems
-- (recommended) *formal languages and automata theory*
+- (recommended) formal languages and automata theory
 
 ## Workload
 
 - ~ 3 weeks per assignment
 - estimated ~ 30--40 hours per assignment
-- team of 3
+- teams of 3
 - *hard* deadlines
 
 ## Course Material
@@ -51,7 +51,7 @@ You should have received a link to this repo via mail:
 
 ## Switching Groups
 
-**Last Chance Today**
+**last chance today**
 
 ## IRC Channel
 
