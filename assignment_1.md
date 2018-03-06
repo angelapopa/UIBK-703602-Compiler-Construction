@@ -14,6 +14,17 @@ Your compiler must be written in C, although you can use C++ for unit testing.
 Build your compiler as (shared) library and use it via dedicated executables.
 An example for this can be found in the provided code.
 
+*Note 1:* This assignment may require more effort than the following ones.
+One reason for this is that starting a project always comes with some overhead -- getting everything up and running, becoming familiar with the topic, organising the team, etc.
+The fact that this assignment spans over 4 weeks should compensate for this.
+Do not hesitate to talk to me if you are struggling.
+
+*Note 2:* I also thought about splitting this assignment into two, dealing with the AST definition and example inputs first.
+And writing the parser in another dedicated assignment.
+I decided against this as the parser and AST are strongly related to each other.
+For most people, writing the parser will influence the design and implementation of the AST.
+Developing both parts in a single assignment should therefore lead to a better overall implementation.
+
 ## Task 0
 
 If you decide to use the provided code-base, make sure you understand it.
