@@ -35,6 +35,7 @@
 - software development
 - operating systems
 - (recommended) formal languages and automata theory
+- **brain**
 
 ## Workload
 
@@ -42,6 +43,12 @@
 - estimated ~ 30--40 hours per assignment
 - teams of 3
 - *hard* deadlines
+
+## Grading
+
+- based on assignments
+- Q/A sessions during lab
+    - *note about background questions*
 
 ## Course Material
 
