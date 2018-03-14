@@ -2,7 +2,12 @@
 
 This document records questions and answers occurring throughout the course.
 
-## AST Related
+- [How should the resulting AST look like?](#how-should-the-resulting-ast-look-like)
+- [How to parse only expressions / statements for unit tests?](#how-to-parse-only-expressions--statements-for-unit-tests)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## How should the resulting AST look like?
 
 > \<QQ\> how should the resulting AST look like, can you give us an example pic?
 > Should it only consists of one assignment?
@@ -33,3 +38,16 @@ The visualisation of an AST representing this function could look like this:
 
 Every statement, expression, literal, operator, etc; is modelled here.
 This would be a subtree of the AST representing the whole input program.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## How to parse only expressions / statements for unit tests?
+
+Normally the top-rule of the parser accepts only a whole program.
+For debugging and testing purposes it can be handy to provide methods which can parse a single expression, or a single statement (or similar).
+
+This can be achieved by using a dedicated token in the top-level rule to determine which rule to invoke next.
+The corresponding token needs to be passed to the parser prior feeding it with the actual input.
+
+More details can be found in the Bison manual:
+[Multiple start-symbols](https://www.gnu.org/software/bison/manual/html_node/Multiple-start_002dsymbols.html)
