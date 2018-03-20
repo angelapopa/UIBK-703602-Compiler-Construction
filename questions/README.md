@@ -5,6 +5,7 @@ This document records questions and answers occurring throughout the course.
 - [How should the resulting AST look like?](#how-should-the-resulting-ast-look-like)
 - [How to parse only expressions / statements for unit tests?](#how-to-parse-only-expressions--statements-for-unit-tests)
 - [I cannot get unary minus / binary minus to work.](#i-cannot-get-unary-minus--binary-minus-to-work)
+- [How to store literals / array size?](#how-to-store-literals--array-size)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -69,3 +70,11 @@ The referenced commit fixes this behaviour, but also drops support for unary min
 
 *Note:* It is highly recommended to implement / enable some form of tracing output to catch similar errors.
 Often the behaviour of the parser becomes obvious when inspecting the token stream or the list of which rules have been tried by the parser.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## How to store literals / array size?
+
+I have added a section [Size Limitations](../mC_specification.md#size-limitations) to the mC specification.
+Basically, you can assume `long` / `double` suffices for literals and array size.
+We have other things to worry about in constructing a compiler than these details.

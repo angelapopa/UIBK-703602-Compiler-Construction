@@ -121,6 +121,13 @@ mC supports only *C-style* comments, starting with `/*` and ending with `*/`.
 Like in C, they can span across multiple lines.
 Comments are discarded by the parser, but do not forget to take newlines into account for line numbering.
 
+## Size Limitations
+
+Inside your compiler, use `long` and `double` to store mC's `int` / `float` literals.
+You may assume that they are big enough to store the corresponding literal.
+
+Similar for arrays, you may assume that arrays are at most `LONG_MAX` bytes long.
+
 ## Special Semantics
 
 ### Boolean
