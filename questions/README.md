@@ -36,8 +36,6 @@ The visualisation of an AST representing this function could look like this:
 
 ![fib AST](gfx/fib_ast.png)
 
-*Variable names are prefixed with an id followed by an underscore.*
-
 Every statement, expression, literal, operator, etc; is modelled here.
 This would be a subtree of the AST representing the whole input program.
 
