@@ -1,4 +1,4 @@
-# Questions
+# FAQ
 
 This document records questions and answers occurring throughout the course.
 
@@ -34,7 +34,7 @@ int fib(int n)
 
 The visualisation of an AST representing this function could look like this:
 
-![fib AST](gfx/fib_ast.png)
+![fib AST](images/fib_ast.png)
 
 Every statement, expression, literal, operator, etc; is modelled here.
 This would be a subtree of the AST representing the whole input program.
@@ -73,6 +73,6 @@ Often the behaviour of the parser becomes obvious when inspecting the token stre
 
 ## How to store literals / array size?
 
-I have added a section [Size Limitations](../mC_specification.md#size-limitations) to the mC specification.
+I have added a section [Size Limitations](mC_specification.md#size-limitations) to the mC specification.
 Basically, you can assume `long` / `double` suffices for literals and array size.
 We have other things to worry about in constructing a compiler than these details.
