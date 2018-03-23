@@ -111,3 +111,9 @@ Each team (not each person):
 8. send me the resulting archive using the following link (do not modify the subject)
 
 :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)
+
+*Note*: I'll try to evaluate all submissions within one week.
+You'll receive a link to a table containing your grade after I finished evaluating all submissions.
+To keep this anonymous I'll use the SHA256 hash of your submitted zip archive instead of your team number.
+If you have concerns that someone else will reconstruct the same zip from your Git repository, attach some random comment to the archive using `zipnote`.
+This way the hash of your archive should be pretty unique.
