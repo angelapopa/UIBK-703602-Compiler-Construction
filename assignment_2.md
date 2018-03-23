@@ -68,9 +68,9 @@ If no entry exists, you just found an undeclared variable and should report an e
 
 - Implement a check to detect uses of unknown functions.
 - Implement a check which ensures there is one function named `main` present.
-  It should not take any parameters and can return either `void` or `int`.
+  It should not take any parameters and return an `int`.
 - Implement a check which ensures that every function has a unique name.
-  Also take the builtin functions into account.
+  Also take the built-in functions into account.
 
 The top-level grammar rule of mC states that a `program` consists of 0 or more function definitions.
 Therefore, by simply looking at the top most part of the AST you can easily see all functions defined.
@@ -87,7 +87,8 @@ Now, simply check each call expression, whether the target function is a member 
 - Implement type checking.
 
 As we do not have to worry about implicit type conversion or deal with type deduction, this should be rather simple.
-This check should also cover call expressions: check for correct number and types of arguments as well as the return type.
+This check should also cover call expressions and return statements:
+check for correct number and types of arguments as well as the return type.
 
 ## Task 5
 
@@ -97,7 +98,7 @@ This check should also cover call expressions: check for correct number and type
 The checks from the previous tasks should ensure that your input program is actually valid.
 We now leave the wonderful world of mCc's front-end and enter its core.
 
-Pay attention that your TAC implementation should be independent from the AST implementation.
+Pay attention that your TAC implementation is independent from the AST implementation.
 It should be possible to completely replace the front-end of the compiler without touching the core.
 
 ## Submission
