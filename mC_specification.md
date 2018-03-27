@@ -139,6 +139,7 @@ The operators `!`, `&&`, and `||` can only be used for booleans.
 
 Strings are immutable and do not support any operation (eg concatenation).
 Yet, like comments, strings can span across multiple lines.
+Furthermore, they do not support escape sequences.
 
 Their sole purpose is to be used with the built-in `print` function for which an implementation will be provided by the compiler.
 
