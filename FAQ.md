@@ -66,8 +66,10 @@ This leads to the problem that a unary / binary minus is not communicated to the
 
 The referenced commit fixes this behaviour, but also drops support for unary minus in the provided code-base.
 
-*Note:* It is highly recommended to implement / enable some form of tracing output to catch similar errors.
+*Note 1:* It is highly recommended to implement / enable some form of tracing output to catch similar errors.
 Often the behaviour of the parser becomes obvious when inspecting the token stream or the list of which rules have been tried by the parser.
+
+*Note 2:* You still have to support the unary minus as it remains part of the specification.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
