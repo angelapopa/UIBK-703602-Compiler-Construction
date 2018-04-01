@@ -19,6 +19,20 @@ In this assignment you have to implement the following checks:
 To implement these semantic checks, a data structure known as *symbol table* needs to be created.
 This table is used while traversing the AST to check semantic properties.
 
+## Task 0
+
+Each group's previously submitted example inputs will be made available to everyone in the days after the first assignment's deadline.
+I'll add them to the provided code-base along with the `fib.mC` example.
+
+Add *all* of these inputs to your set of example inputs -- these are your integration tests.
+Check whether the parts you created in the previous assignment support all of these inputs.
+Adjust your implementation accordingly.
+
+All of them *should* be compliant with the specification.
+Please notify me right away if you spot any errors or ambiguities.
+
+Check for updates on these example inputs prior submitting.
+
 ## Task 1
 
 - Find out what symbol tables are and how they are typically used.
