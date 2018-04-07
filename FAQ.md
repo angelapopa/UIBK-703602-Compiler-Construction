@@ -6,6 +6,7 @@ This document records questions and answers occurring throughout the course.
 - [How to parse only expressions / statements for unit tests?](#how-to-parse-only-expressions--statements-for-unit-tests)
 - [I cannot get unary minus / binary minus to work.](#i-cannot-get-unary-minus--binary-minus-to-work)
 - [How to store literals / array size?](#how-to-store-literals--array-size)
+- [Redeclaration in the same scope / shadowing paramters](#redeclaration-in-the-same-scope--shadowing-paramters)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -78,3 +79,14 @@ Often the behaviour of the parser becomes obvious when inspecting the token stre
 I have added a section [Size Limitations](mC_specification.md#size-limitations) to the mC specification.
 Basically, you can assume `long` / `double` suffices for literals and array size.
 We have other things to worry about in constructing a compiler than these details.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+## Redeclaration in the same scope / shadowing paramters
+
+> \<ClawOfLight\>: Assignment 2 is not entirely clear: are multiple declarations in the same scope legal or not?\
+> \<ClawOfLight\>: Also, how should we treat shadowing of parameters? Are they legal, i.e. params are their own scope?
+
+Both should be handled the same way as in C:
+A redeclaration of a variable (within the same scope) results in an error.
+Similarly declaring a variable which would shadow a parameter.
