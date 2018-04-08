@@ -54,6 +54,11 @@ It will be updated periodically.
   Take them out or at least suppress them for release builds.
   Or introduce a logging mechanism with tunable log level.
 
+- **embrace out-of-source builds:**
+  Most build systems, like CMake, are made for out-of-source builds.
+  This means that all auto-generated files go into the build directory.
+  Nothing should be written to your source directly while building and testing.
+
 ## Assignment 1
 
 - Your parser should not accept input which does not conform to the input grammar.
