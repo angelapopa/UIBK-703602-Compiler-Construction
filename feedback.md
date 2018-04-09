@@ -59,6 +59,15 @@ It will be updated periodically.
   This means that all auto-generated files go into the build directory.
   Nothing should be written to your source directly while building and testing.
 
+- **keep things focused and composable:**
+  For instance, the integration test script should not invoke the build system.
+  Its purpose is to run the integration tests.
+  If you desire a more automated way for building and running them, use a dedicated *run target* which executes the runner and depends on the `mCc` binary.
+  Similarly, `mC_to_dot` should not execute `dot` / `xdot` / `xdg-open`.
+  It should *only* output the AST in the DOT format.
+  Use a 3 line shell script if you want to combine these commands.
+  Of course, this also applies to source code via the composition of functions.
+
 ## Assignment 1
 
 - Your parser should not accept input which does not conform to the input grammar.
