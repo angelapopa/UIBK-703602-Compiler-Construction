@@ -68,6 +68,11 @@ It will be updated periodically.
   Use a 3 line shell script if you want to combine these commands.
   Of course, this also applies to source code via the composition of functions.
 
+- **correct usage of assertions:**
+  > Assertions are not a mechanism for handling run-time errors.
+
+  See <https://ptolemy.eecs.berkeley.edu/~johnr/tutorials/assertions.html>.
+
 ## Assignment 1
 
 - Your parser should not accept input which does not conform to the input grammar.
