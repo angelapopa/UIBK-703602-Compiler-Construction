@@ -82,7 +82,7 @@ If no entry exists, you just found an undeclared variable and should report an e
 
 - Implement a check to detect uses of unknown functions.
 - Implement a check which ensures there is one function named `main` present.
-  It should not take any parameters and return an `int`.
+  It should not take any parameters and return nothing (`void`).
 - Implement a check which ensures that every function has a unique name.
   Also take the built-in functions into account.
 
