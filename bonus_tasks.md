@@ -32,7 +32,7 @@ You are not obliged to implement them, but doing so may shift your grade.
 ## Assignment 1
 
 - Implement a visitor mechanism which houses the logic of traversing the AST.
-  Use this visitor for all tasks involving AST traversal.
+  Use this visitor for the majority of tasks involving AST traversal.
 
 - Investigate the tracing / debugging options provided by flex / bison.
   Provide a way to access these debugging information.
