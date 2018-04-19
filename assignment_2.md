@@ -1,6 +1,6 @@
 # Assignment 2 -- Semantic Checks / Type Checking / IR
 
-*due on 25 April 2018*
+*due on 16 May 2018*
 
 Now that we have obtained the AST of an input program we need to run additional checks to ensure it is semantically sane.
 Not every input program accepted by the parser is actually a valid mC program.

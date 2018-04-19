@@ -1,20 +1,14 @@
-# Assignment 3 -- Control Flow Graph / Assembly
+# Assignment 3 -- Assembly
 
-*due on 16 May 2018*
+*due on 6 June 2018*
 
 The goal of this assignment is to implement the parts remaining to obtain an executable.
-Additionally, you are asked to create the control flow graph (CFG) which will be used later on for optimisations.
 
 For simplicity we are targeting x86, not x86_64.
 This can be achieved on a 64 bit installation by passing `-m32` to GCC when compiling your generated assembler code.
 For this, the [GCC multilib package](https://packages.debian.org/buster/gcc-multilib) needs to be installed.
 
 ## Task 1
-
-- Implement the generation of CFGs (one per function) based on your TAC.
-- Provide a mechanism to print a CFG in the DOT format.
-
-## Task 2
 
 - Implement code generation.
 
@@ -29,7 +23,7 @@ Yet, pay special attention to floating point and integer handling.
 Use [cdecl calling convention](https://en.wikipedia.org/wiki/X86_calling_conventions#cdecl).
 It is crucial to correctly implement the calling convention, otherwise you will corrupt your stack during function calls and returns.
 
-## Task 3
+## Task 2
 
 - Implement back-end compiler invocation.
 
@@ -41,7 +35,7 @@ Double check whether the built-in functions provided to your back-end compiler u
 
 You should now have a working compiler which can convert valid mC input programs to executables.
 
-## Task 4
+## Task 3
 
 Polish the commandline parameter handling of your main compiler executable.
 At least the following flags must be provided:
@@ -50,7 +44,7 @@ At least the following flags must be provided:
 - `-v` / `--version` to display version information
 - `-o` / `--output`  to specify the resulting executable
 
-## Task 5
+## Task 4
 
 Extend your integration test runner to also execute the generated binary.
 Pass the content of the corresponding `.stdin` file to the binary and compare its output with the corresponding `.stdout` file.
