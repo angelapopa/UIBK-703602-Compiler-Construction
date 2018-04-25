@@ -49,16 +49,10 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 - Use static single assignment (SSA).
 
-## Assignment 3
+## Assignment 4
 
 - Implement a visitor mechanism for your CFGs.
 
 - Implement the generation of the call graph.
 
 - Perform register allocation.
-
-## Assignment 4
-
-- Implement some form of error recovery.
-  Do not simply terminate the parsing process upon encountering an error.
-  Continue at a sensible point in the token stream and accumulate errors.
