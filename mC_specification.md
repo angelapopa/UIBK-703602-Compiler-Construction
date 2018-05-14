@@ -169,9 +169,12 @@ You'd have to do this via a loop, assigning every element:
     	i = i + 1;
     }
 
-### Call by Value / Call by Reference
+### Call by Value
 
-`bool`, `int`, and `float` are passed by value, while `string` and arrays are passed by reference.
+Function arguments are always passed by value.
+
+`bool`, `int`, and `float` are passed directly.
+Strings and arrays are passed via pointers.
 
 ### Type Conversion
 
