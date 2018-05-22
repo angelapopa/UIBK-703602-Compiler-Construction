@@ -73,6 +73,11 @@ It will be updated periodically.
 
   See <https://ptolemy.eecs.berkeley.edu/~johnr/tutorials/assertions.html>.
 
+- **be safe, use `snprintf`:**
+  While a `char message[256];` may seem like a good idea at first, it may happen that the length of that message may exceed the size of the buffer.
+  Use `snprintf` rather than `sprintf`.
+  Even further, do not hardcode the size, use `sizeof`.
+
 ## Assignment 1
 
 - Your parser should not accept input which does not conform to the input grammar.
