@@ -169,6 +169,10 @@ You'd have to do this via a loop, assigning every element:
     	i = i + 1;
     }
 
+Even further, one cannot assign to a variable of array type.
+
+    c = a;    /* not supported, even though both are of type int[10] */
+
 ### Call by Value
 
 Function arguments are always passed by value.
