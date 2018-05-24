@@ -2,8 +2,6 @@
 
 *due on 27 June 2018*
 
-*TBD -- will be based on the content of the lecture.*
-
 ## Task 1
 
 - Implement the generation of control-flow graphs (CFGs) based on your TAC --- one graph per function.
@@ -11,7 +9,22 @@
 
 ## Task 2
 
-*TBD*
+- Implement *global redundancy elimination* as work-list algorithm.
+- Add a switch `-O` (no argument) to your `mCc` executable, which enables optimisation.
+- Show the result using the example from the lecture:
+    - Present the mC input program.
+    - Show the corresponding CFG.
+    - Show the relevant TAC before optimisation.
+    - Show the relevant TAC after optimisation.
+    - (optional) Show a table of the calucation, similar to the one from the lecture.
+    - Measure the impact of this optimisation.
+        - For a single run, the improvement will be quite hard to notice.
+          Consider putting the lecture example in a loop with a fixed number of iterations.
+        - Present the measurement results.
+        - Tell which hardware was used for the measuring process.
+- Do the same for another example, containing a loop -- so that there is a backward edge in the CFG processed by the optimisation logic.
+
+Put all this into `doc/optimisation.md`, images go into `doc/images`.
 
 ## Submission
 
