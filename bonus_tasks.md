@@ -49,10 +49,8 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 - Use static single assignment (SSA).
 
-## Assignment 4
+## Assignment 3
 
 - Implement a visitor mechanism for your CFGs.
 
 - Implement the generation of the call graph.
-
-- Perform register allocation.

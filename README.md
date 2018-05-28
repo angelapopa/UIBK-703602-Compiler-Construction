@@ -5,8 +5,7 @@
 | 2018-03-07 |              | Welcome                              |
 | 2018-04-04 | Assignment 1 | Flex / Bison                         |
 | 2018-05-16 | Assignment 2 | Semantic Checks / Type Checking / IR |
-| 2018-06-06 | Assignment 3 | Assembly                             |
-| 2018-06-27 | Assignment 4 | Optimisations                        |
+| 2018-07-04 | Assignment 3 | Assembly Optimisations               |
 
 The lab will take place in HSB 5 (group 1) / RR15 (group 2).
 

@@ -1,6 +1,6 @@
-# Assignment 3 -- Assembly
+# Assignment 3 -- Assembly / Optimisation
 
-*due on 6 June 2018*
+*due on 4 July 2018*
 
 The goal of this assignment is to implement the parts remaining to obtain an executable.
 
@@ -136,9 +136,10 @@ You should now have a working compiler which can convert valid mC input programs
 Polish the commandline parameter handling of your main compiler executable.
 At least the following flags must be provided:
 
-- `-h` / `--help`    to display usage information
-- `-v` / `--version` to display version information
-- `-o` / `--output`  to specify the resulting executable
+- `-h` / `--help`     to display usage information
+- `-v` / `--version`  to display version information
+- `-o` / `--output`   to specify the resulting executable
+- `-O` / `--optimize` to enable optimisation (no argument, disabled by default)
 
 ## Task 4
 
@@ -147,6 +148,32 @@ Pass the content of the corresponding `.stdin` file to the binary and compare it
 Matching output indicates success.
 
 Either use a temporary directory (`mktemp`) or the build directory to store the integration test executables.
+
+## Task 5
+
+- Implement the generation of control-flow graphs (CFGs) based on your TAC --- one graph per function.
+- Provide a mechanism to print a CFG in the DOT format.
+
+## Task 6 (Low priority)
+
+*While this is not a bonus task, start with this one only after everything else works.*
+
+- Implement *global redundancy elimination* as work-list algorithm.
+- Add a switch `-O` (no argument) to your `mCc` executable, which enables optimisation.
+- Show the result using the example from the lecture:
+    - Present the mC input program.
+    - Show the corresponding CFG.
+    - Show the relevant TAC before optimisation.
+    - Show the relevant TAC after optimisation.
+    - (optional) Show a table of the calucation, similar to the one from the lecture.
+    - Measure the impact of this optimisation.
+        - For a single run, the improvement will be quite hard to notice.
+          Consider putting the lecture example in a loop with a fixed number of iterations.
+        - Present the measurement results.
+        - Tell which hardware was used for the measuring process.
+- Do the same for another example, containing a loop -- so that there is a backward edge in the CFG processed by the optimisation logic.
+
+Put all this into `doc/optimisation.md`, images go into `doc/images`.
 
 ## Submission
 
